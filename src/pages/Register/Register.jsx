@@ -30,7 +30,7 @@ const handleFormRegister = e => {
         </div>
         <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
           <form  onSubmit={handleFormRegister} className="card-body">
-          <h1 className="text-3xl text-center font-bold">Login now!</h1>
+          <h1 className="text-3xl text-center font-bold">Register now!</h1>
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Email</span>
@@ -48,7 +48,7 @@ const handleFormRegister = e => {
               </label>
             </div>
             <div className="form-control mt-6">
-              <button className="btn btn-primary">Login</button>
+              <button className="btn btn-primary">Register</button>
             </div>
           </form>
         </div>

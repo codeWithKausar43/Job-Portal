@@ -7,12 +7,13 @@ const HotJobsCard = ({ job }) => {
   const {
     _id,
     category,
-    company,
     company_logo,
     description,
     location,
     requirements,
     salaryRange,
+applicationDeadline,
+    title
   } = job;
   return (
     <div className="card card-compact bg-base-100 shadow-xl">
@@ -21,9 +22,9 @@ const HotJobsCard = ({ job }) => {
           <img className="w-16" src={company_logo} alt="Shoes" />
         </figure>
         <div>
-          <h3 className="text-lg">{company}</h3>
+          <h3 className="text-lg">{title}</h3>
           <p className="text-sm flex items-center">
-            {" "}
+              
             <IoLocationSharp /> {location}
           </p>
         </div>
@@ -32,6 +33,7 @@ const HotJobsCard = ({ job }) => {
         <div className="flex items-center gap-2">
           <h2 className="card-title">{category}</h2>
           <div className="badge badge-secondary">NEW</div>
+          <p>{applicationDeadline}</p>
         </div>
         <p>{description}</p>
         <p className="flex flex-wrap gap-2 ">

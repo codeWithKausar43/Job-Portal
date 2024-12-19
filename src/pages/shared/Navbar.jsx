@@ -13,10 +13,11 @@ const handleSingOut = () => {
     <>
      <div className="flex gap-2">
      <NavLink to="/">Home</NavLink>
-       <NavLink to="/about">About</NavLink>
-       <NavLink to="/contact">Contact</NavLink>
+       <NavLink to="/myApplyJob">My Application</NavLink>
+       <NavLink to="/addJob">Add Job</NavLink>
+       <NavLink to="/myPostedJobs">MY Posted Jobs</NavLink>
      </div>
- 
+
     </>
   );
   return (
